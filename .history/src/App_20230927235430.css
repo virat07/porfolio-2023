@@ -24,7 +24,7 @@ body {
 }
 
 .bg-accent {
-    background: hwb(221 25% 6%);
+    background: hsl(186, 100%, 73%);
 }
 
 .text-accent {
@@ -37,7 +37,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: hsl(239, 100%, 75%);
+    color: #7477FF;
 }
 
 .mobile-nav {

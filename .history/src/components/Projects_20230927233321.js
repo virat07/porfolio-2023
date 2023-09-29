@@ -1,34 +1,38 @@
 import React from "react";
-import insight1 from "../assets/insight1.png";
-import sciklit from "../assets/sciklit.png";
-import mernchatbox from "../assets/mernchatbox.png";
-import upcoming from '../assets/upcoming.png'
+import cssProjects from "../assets/cssprojects.png";
+import devlog from "../assets/devlog.png";
+import getInspirred from "../assets/get-inspirred.png";
+import uilogs from "../assets/uilogs.png";
 
 const Projects = () => {
   const projects = [
     {
-      img: upcoming,
-      title: "Cultural Awarenss",
-      desc: "Cultural awareness is paramount for fostering understanding, respect, and collaboration among diverse individuals and communities",
-      code: "https://github.com/virat07/csusb-cultural-awarness",
+      img: devlog,
+      title: "devlog",
+      desc: " A multi author blog. Built with Node.js, MongoDB, React, Redux and Tailwind CSS ",
+      live: "https://devlogg.onrender.com/",
+      code: "https://github.com/Coderamrin/devlog",
     },
     {
-      img: insight1,
-      title: "Personality Traits website",
-      desc: "Insight Discovery Model to evaluate a person's personality traits.",
-      code: "https://github.com/virat07/bizinc-Insight-Discovery/tree/main",
+      img: uilogs,
+      title: "uilogs",
+      desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
+      live: "https://uilogs.xyz/",
+      code: "https://github.com/Coderamrin/html-templates",
     },
     {
-      img: sciklit,
-      title: "Salary Data analysis",
-      desc: "Salary Data analysis using scikit-learn, matplotlib.",
-      code: "https://github.com/virat07/stream-demo1      ",
+      img: cssProjects,
+      title: "css projects",
+      desc: "Frontend Mentor challange directory, solved with vanilla CSS",
+      live: "https://build-10-css-projects.netlify.app/",
+      code: "https://github.com/Coderamrin/build-10-css-projects",
     },
     {
-      img: mernchatbox,
-      title: "Mern Chat Box",
-      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs.",
-      code: "https://drive.google.com/drive/folders/1S3cVaQBLljpasW_ffVPveHvm09fmzA42?usp=sharing",
+      img: getInspirred,
+      title: "get Inspirred",
+      desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
+      live: "https://get-inspirred.netlify.app/",
+      code: "https://github.com/Coderamrin/get-inspired",
     },
   ];
 
@@ -42,7 +46,7 @@ const Projects = () => {
 
           <p className="pb-5">
             These are some of my best projects. I have built these with React,
-            NextJs, MERN and vanilla CSS. Check them out.
+            MERN and vanilla CSS. Check them out.
           </p>
         </div>
 
@@ -53,13 +57,19 @@ const Projects = () => {
         {projects.map((project, i) => {
           return (
             <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} className="h-[80%]"/>
+              <img src={project.img} alt={project.title} />
               <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                 <p className="py-5 text-center font-bold px-2 text-white">
                   {project.desc}
                 </p>
 
                 <div className="mx-auto">
+                  <a
+                    href={project.live}
+                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
+                  >
+                    Live
+                  </a>
                   <a
                     href={project.code}
                     className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"

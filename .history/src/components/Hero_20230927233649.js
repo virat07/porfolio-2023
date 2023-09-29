@@ -3,6 +3,8 @@ import HeroImg from "../assets/hero-img.png";
 
 import {
   AiOutlineTwitter,
+  AiOutlineYoutube,
+  AiOutlineFacebook,
   AiOutlineGithub,
 } from "react-icons/ai";
 

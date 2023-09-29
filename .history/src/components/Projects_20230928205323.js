@@ -2,16 +2,9 @@ import React from "react";
 import insight1 from "../assets/insight1.png";
 import sciklit from "../assets/sciklit.png";
 import mernchatbox from "../assets/mernchatbox.png";
-import upcoming from '../assets/upcoming.png'
 
 const Projects = () => {
   const projects = [
-    {
-      img: upcoming,
-      title: "Cultural Awarenss",
-      desc: "Cultural awareness is paramount for fostering understanding, respect, and collaboration among diverse individuals and communities",
-      code: "https://github.com/virat07/csusb-cultural-awarness",
-    },
     {
       img: insight1,
       title: "Personality Traits website",
@@ -27,7 +20,7 @@ const Projects = () => {
     {
       img: mernchatbox,
       title: "Mern Chat Box",
-      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs.",
+      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs",
       code: "https://drive.google.com/drive/folders/1S3cVaQBLljpasW_ffVPveHvm09fmzA42?usp=sharing",
     },
   ];

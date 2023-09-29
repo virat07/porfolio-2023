@@ -1,17 +1,9 @@
 import React from "react";
 import insight1 from "../assets/insight1.png";
 import sciklit from "../assets/sciklit.png";
-import mernchatbox from "../assets/mernchatbox.png";
-import upcoming from '../assets/upcoming.png'
 
 const Projects = () => {
   const projects = [
-    {
-      img: upcoming,
-      title: "Cultural Awarenss",
-      desc: "Cultural awareness is paramount for fostering understanding, respect, and collaboration among diverse individuals and communities",
-      code: "https://github.com/virat07/csusb-cultural-awarness",
-    },
     {
       img: insight1,
       title: "Personality Traits website",
@@ -25,9 +17,9 @@ const Projects = () => {
       code: "https://github.com/virat07/stream-demo1      ",
     },
     {
-      img: mernchatbox,
+      img: sciklit,
       title: "Mern Chat Box",
-      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs.",
+      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs",
       code: "https://drive.google.com/drive/folders/1S3cVaQBLljpasW_ffVPveHvm09fmzA42?usp=sharing",
     },
   ];
@@ -53,7 +45,7 @@ const Projects = () => {
         {projects.map((project, i) => {
           return (
             <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} className="h-[80%]"/>
+              <img src={project.img} alt={project.title} />
               <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                 <p className="py-5 text-center font-bold px-2 text-white">
                   {project.desc}

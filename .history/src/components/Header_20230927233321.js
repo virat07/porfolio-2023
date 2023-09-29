@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="flex justify-between px-5 py-2 bg-primary text-white fixed w-full z-10">
       <a href="/" className="logo text-2xl font-bold text-accent">
-        Bharat
+        Amrin
       </a>
 
       {/* Desktop Nav */}
@@ -23,11 +23,14 @@ const Header = () => {
             <a href="/#projects">Projects</a>
           </li>
           <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
             <a href="/#contact">Contact</a>
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1g2Fc2opWQBbn-tyLFRHMZbQzsLdDp0ho/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ugumpTwoA8vtAAWw2ezI0CZP2IGUwPzF/view"
               target="_blank"
               without
               rel="noreferrer"

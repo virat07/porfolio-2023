@@ -1,34 +1,16 @@
 import React from "react";
+import cssProjects from "../assets/cssprojects.png";
 import insight1 from "../assets/insight1.png";
-import sciklit from "../assets/sciklit.png";
-import mernchatbox from "../assets/mernchatbox.png";
-import upcoming from '../assets/upcoming.png'
+import getInspirred from "../assets/get-inspirred.png";
+import uilogs from "../assets/uilogs.png";
 
 const Projects = () => {
   const projects = [
-    {
-      img: upcoming,
-      title: "Cultural Awarenss",
-      desc: "Cultural awareness is paramount for fostering understanding, respect, and collaboration among diverse individuals and communities",
-      code: "https://github.com/virat07/csusb-cultural-awarness",
-    },
     {
       img: insight1,
       title: "Personality Traits website",
       desc: "Insight Discovery Model to evaluate a person's personality traits.",
       code: "https://github.com/virat07/bizinc-Insight-Discovery/tree/main",
-    },
-    {
-      img: sciklit,
-      title: "Salary Data analysis",
-      desc: "Salary Data analysis using scikit-learn, matplotlib.",
-      code: "https://github.com/virat07/stream-demo1      ",
-    },
-    {
-      img: mernchatbox,
-      title: "Mern Chat Box",
-      desc: "MERN chat boxes offer a range of features such as instant messaging, group chats, file sharing, and notifications, making them versatile and adaptable to various communication needs.",
-      code: "https://drive.google.com/drive/folders/1S3cVaQBLljpasW_ffVPveHvm09fmzA42?usp=sharing",
     },
   ];
 
@@ -41,8 +23,8 @@ const Projects = () => {
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            NextJs, MERN and vanilla CSS. Check them out.
+            These are some of my best projects. I have built these with React, NextJs, 
+            MERN and vanilla CSS. Check them out.
           </p>
         </div>
 
@@ -53,7 +35,7 @@ const Projects = () => {
         {projects.map((project, i) => {
           return (
             <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} className="h-[80%]"/>
+              <img src={project.img} alt={project.title} />
               <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                 <p className="py-5 text-center font-bold px-2 text-white">
                   {project.desc}

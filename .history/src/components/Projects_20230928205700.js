@@ -7,7 +7,7 @@ import upcoming from '../assets/upcoming.png'
 const Projects = () => {
   const projects = [
     {
-      img: upcoming,
+      img: insight1,
       title: "Cultural Awarenss",
       desc: "Cultural awareness is paramount for fostering understanding, respect, and collaboration among diverse individuals and communities",
       code: "https://github.com/virat07/csusb-cultural-awarness",

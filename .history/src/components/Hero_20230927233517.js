@@ -3,7 +3,8 @@ import HeroImg from "../assets/hero-img.png";
 
 import {
   AiOutlineTwitter,
-  AiOutlineGithub,
+  AiOutlineYoutube,
+  AiOutlineFacebook,
 } from "react-icons/ai";
 
 const Hero = () => {
@@ -22,18 +23,25 @@ const Hero = () => {
 
           <div className="flex py-5 ">
             <a
-              href="https://twitter.com/bharatgupta07"
+              href="https://twitter.com/CoderAmrin"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
               <AiOutlineTwitter size={40} />{" "}
             </a>
             <a
-              href="https://github.com/virat07"
+              href="https://www.youtube.com/@coderamrin"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineGithub size={40} />{" "}
+              <AiOutlineYoutube size={40} />{" "}
+            </a>
+            <a
+              href="https://www.facebook.com/CoderAmrin/"
+              className="pr-4 inline-block text-accent hover:text-white"
+            >
+              {" "}
+              <AiOutlineFacebook size={40} />{" "}
             </a>
           </div>
 
